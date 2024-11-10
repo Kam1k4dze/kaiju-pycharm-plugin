@@ -5,6 +5,9 @@
 
 ## [Unreleased]
 
+## [1.0.1]
+- JDK 21
+
 ## [1.0.0]
 ### Added
 - Initial plugin release with YAML reference support for Kaiju projects
