@@ -1,4 +1,4 @@
-# kaiju-pycharm-plugin
+﻿# kaiju-pycharm-plugin
 
 ![Build](https://github.com/Kam1k4dze/kaiju-pycharm-plugin/workflows/Build/badge.svg)
 [![Version](https://img.shields.io/jetbrains/plugin/v/MARKETPLACE_ID.svg)](https://plugins.jetbrains.com/plugin/MARKETPLACE_ID)
@@ -17,11 +17,14 @@
 - [ ] Click the <kbd>Watch</kbd> button on the top of the [IntelliJ Platform Plugin Template][template] to be notified about releases containing new features and fixes.
 
 <!-- Plugin description -->
-This Fancy IntelliJ Platform Plugin is going to be your implementation of the brilliant ideas that you have.
+PyCharm plugin providing code completion, navigation and reference resolution support for [Kaiju Tools](https://pypi.org/project/kaiju-tools/) - a Python library for building testable microservices.
 
-This specific section is a source for the [plugin.xml](/src/main/resources/META-INF/plugin.xml) file which will be extracted by the [Gradle](/build.gradle.kts) during the build process.
+Key features:
+- Service class references and navigation in YAML files
+- Configuration variable resolution and linking
+- Support for Kaiju's settings syntax and service definitions
 
-To keep everything working, do not remove `<!-- ... -->` sections. 
+The plugin enhances development experience when working with Kaiju-based microservices projects in PyCharm.
 <!-- Plugin description end -->
 
 ## Installation
