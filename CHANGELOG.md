@@ -2,6 +2,12 @@
 
 # kaiju-pycharm-plugin Changelog
 
+
 ## [Unreleased]
+
+## [1.0.0]
 ### Added
-- Initial scaffold created from [IntelliJ Platform Plugin Template](https://github.com/JetBrains/intellij-platform-plugin-template)
+- Initial plugin release with YAML reference support for Kaiju projects
+- Implemented Python service class references and navigation from YAML files
+- Added support for configuration variable resolution in YAML settings
+- Integrated JSON configuration property resolution for variable references
