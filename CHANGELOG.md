@@ -4,7 +4,8 @@
 
 
 ## [Unreleased]
-
+## [1.0.2]
+- 24.3 support
 ## [1.0.1]
 - JDK 21
 
