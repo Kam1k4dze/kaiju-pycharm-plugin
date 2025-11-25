@@ -1,14 +1,32 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.kam1k4dze.kaijuPycharmPlugin</id>
-    <name>Kaiju</name>
+    <name>Kaiju-Pycharm</name>
     <vendor>kam1k4dze</vendor>
 
     <depends>com.intellij.modules.platform</depends>
     <depends>com.intellij.modules.python</depends>
     <depends>org.jetbrains.plugins.yaml</depends>
     <depends>com.intellij.modules.json</depends>
+
     <extensions defaultExtensionNs="com.intellij">
-        <psi.referenceContributor language="yaml" implementation="com.github.kam1k4dze.kaijuPycharmPlugin.KaijuYamlReferenceContributor"/>
+        <psi.referenceContributor language="yaml"
+                                  implementation="com.github.kam1k4dze.kaijupycharmplugin.KaijuYamlReferenceContributor"/>
+
+        <localInspection language="yaml"
+                         implementationClass="com.github.kam1k4dze.kaijupycharmplugin.KaijuMissingVariableInspection"
+                         displayName="Kaiju missing variable value"
+                         groupName="Kaiju Configuration"
+                         shortName="KaijuMissingVariable"
+                         level="ERROR"
+                         enabledByDefault="true"/>
+
+        <localInspection language="JSON"
+                         implementationClass="com.github.kam1k4dze.kaijupycharmplugin.KaijuUnusedJsonPropertyInspection"
+                         displayName="Kaiju unused JSON property"
+                         groupName="Kaiju Configuration"
+                         shortName="KaijuUnusedJsonProperty"
+                         level="WARNING"
+                         enabledByDefault="true"/>
     </extensions>
 </idea-plugin>
